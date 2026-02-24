@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced To-Do</title>
+
+  <style>
+    body {
+      background-color: lavender;
+      color: darkcyan;
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      font-family: system-ui;
+    }
+
+    #container {
+      border: solid cornflowerblue;
+      border-radius: 10px;
+      width: 600px;
+      padding: 20px;
+      text-align: center;
+      background: white;
+    }
+
+    input {
+      padding: 8px;
+      width: 60%;
+      border: double rgb(68,153,190);
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 6px 10px;
+      margin-left: 5px;
+      border-radius: 5px;
+      border: solid rgb(68,153,190);
+      cursor: pointer;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    li {
+      margin: 10px 0;
+      padding: 8px;
+      background: #f0f8ff;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .completed {
+      text-decoration: line-through;
+      color: gray;
+    }
+
+    .task-buttons button {
+      margin-left: 5px;
+    }
+
+    #clearAll {
+      margin-top: 15px;
+      background: lightcoral;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="container">
+  <h1>✨ To-Do List</h1>
+
+  <input type="text" id="inputText" placeholder="Enter Task">
+  <button id="btn">Add Task</button>
+
+  <ul id="taskcontain"></ul>
+
+  <button id="clearAll">Clear All</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
